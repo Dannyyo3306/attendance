@@ -1,0 +1,105 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Light background color for better contrast */
+    color: #333; /* Text color for readability */
+    padding: 20px;
+}
+
+/* Container for centered layout with a maximum width */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #ffffff; /* White background for content area */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+    width: 100%; /* Full width */
+}
+
+input, select, button {
+    padding: 12px;
+    margin: 10px 0; /* More space between elements */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Slight rounding on inputs */
+    width: calc(100% - 26px); /* Full width accounting for padding */
+}
+
+input:focus, select:focus, button:focus {
+    outline: none; /* Remove outline on focus */
+    border-color: #008cba; /* Highlight color for focus */
+}
+
+/* Button styles */
+button {
+    cursor: pointer;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease; /* Transition effect for hover */
+}
+
+button:hover {
+    background-color: #005f8d;
+}
+
+button:active {
+    background-color: #004a6f; /* Darker color when active */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px; /* More padding for better readability */
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #555; /* Slightly darker text for headers */
+}
+
+/* List styles */
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #f9f9f9; /* Light background color for list items */
+    margin: 5px 0; /* Space between items */
+    padding: 10px;
+    border-radius: 4px; /* Rounded corners for list items */
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+ul li img {
+    border-radius: 50%; /* Make images round */
+    margin-right: 10px; /* Space between image and text */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    input, select, button {
+        width: 100%; /* Full width on smaller screens */
+        margin: 5px 0; /* Uniform margin */
+    }
+}
